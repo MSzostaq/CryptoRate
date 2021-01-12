@@ -1,14 +1,11 @@
 import React from "react";
-// import styled from "styled-components";
-import "./App.css";
-import Routes from "./components/Routes";
+import Button from "components/Button";
 
-function App() {
-  return (
-    <div className="App">
-      <Routes />
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <h1>Hello</h1>
+    <Button>ok</Button>
+  </div>
+);
 
 export default App;

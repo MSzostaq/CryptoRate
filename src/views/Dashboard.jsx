@@ -1,7 +1,7 @@
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "components/Sidebar";
 
 const ViewWrapper = styled.div`
   height: 100%;

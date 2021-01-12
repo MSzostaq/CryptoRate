@@ -1,18 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Button from "../components/Button";
+import Button from "components/Button";
 
-const StyledSidebar = styled.div`
+const StyledWrapper = styled.nav`
   background-color: #000000;
+  width: 100px;
+  height: 100%;
 `;
 
 const Sidebar = () => {
-  <StyledSidebar>
-    <Button as={Link} to="/wallet">
-      test
-    </Button>
-  </StyledSidebar>;
+  <StyledWrapper>
+    <Button>test</Button>
+  </StyledWrapper>;
 };
 
 export default Sidebar;
