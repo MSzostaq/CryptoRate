@@ -1,18 +1,33 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Button from "components/Button";
 
+const StyledButton = styled(Button)`
+  width: 56px;
+  height: 56px;
+`;
+
 const StyledWrapper = styled.nav`
-  background-color: #000000;
-  width: 100px;
+  align-items: center;
+  background-color: #0066ff;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
   height: 100%;
 `;
 
-const Sidebar = () => {
-  <StyledWrapper>
-    <Button>test</Button>
-  </StyledWrapper>;
-};
+function Sidebar() {
+  return (
+    <StyledWrapper>
+      <StyledButton>test</StyledButton>
+      <StyledButton>test</StyledButton>
+      <StyledButton>test</StyledButton>
+    </StyledWrapper>
+  );
+}
 
 export default Sidebar;
