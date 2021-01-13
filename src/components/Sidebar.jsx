@@ -1,9 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//  import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Button from "components/Button";
+import ButtonIcon from "components/ButtonIcon";
+import trophyIcon from "icons/trophyIcon.svg";
 
-const StyledButton = styled(Button)`
+const StyledButtonIcon = styled(ButtonIcon)`
+  margin-top: 12px;
   width: 56px;
   height: 56px;
 `;
@@ -23,9 +26,7 @@ const StyledWrapper = styled.nav`
 function Sidebar() {
   return (
     <StyledWrapper>
-      <StyledButton>test</StyledButton>
-      <StyledButton>test</StyledButton>
-      <StyledButton>test</StyledButton>
+      <StyledButtonIcon icon={trophyIcon} activeclass="active" />
     </StyledWrapper>
   );
 }
