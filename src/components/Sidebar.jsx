@@ -1,32 +1,36 @@
 import React from "react";
-//  import { Link } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
+// import { motion } from "framer-motion";
 import styled from "styled-components";
-import Button from "components/Button";
 import ButtonIcon from "components/ButtonIcon";
 import trophyIcon from "icons/trophyIcon.svg";
+import profitsIcon from "icons/profitsIcon.svg";
+import walletIcon from "icons/walletIcon.svg";
 
 const StyledButtonIcon = styled(ButtonIcon)`
-  margin-top: 12px;
-  width: 56px;
-  height: 56px;
+  display: block;
+  padding: 1px 1px 1px 18px;
 `;
 
 const StyledWrapper = styled.nav`
-  align-items: center;
-  background-color: #0066ff;
+  background-color: #87cefa;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
-  width: 120px;
+  width: 180px;
   height: 100%;
 `;
 
 function Sidebar() {
   return (
     <StyledWrapper>
-      <StyledButtonIcon icon={trophyIcon} activeclass="active" />
+      <StyledButtonIcon icon={trophyIcon} />
+      <StyledButtonIcon icon={walletIcon} />
+      <StyledButtonIcon icon={profitsIcon} />
     </StyledWrapper>
   );
 }
