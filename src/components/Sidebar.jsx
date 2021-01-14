@@ -9,7 +9,10 @@ import walletIcon from "icons/walletIcon.svg";
 
 const StyledButtonIcon = styled(ButtonIcon)`
   display: block;
-  padding: 1px 1px 1px 18px;
+  padding: 10px 10px 10px 18px;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 `;
 
 const StyledWrapper = styled.nav`
