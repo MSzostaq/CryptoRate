@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Router } from "react-router-dom";
+import { Link, BrowserRouter } from "react-router-dom";
 // import { motion } from "framer-motion";
 import styled from "styled-components";
 import ButtonIcon from "components/ButtonIcon";
@@ -7,12 +7,14 @@ import trophyIcon from "icons/trophyIcon.svg";
 import profitsIcon from "icons/profitsIcon.svg";
 import walletIcon from "icons/walletIcon.svg";
 
-const StyledDiv = styled.div`
+const StyledLink = styled(Link)`
   align-items: center;
   border-radius: 4px;
+  color: inherit;
   display: flex;
   flex-direction: row;
   margin-bottom: 24px;
+  text-decoration: none;
   width: 180px;
   height: 60px;
   &:hover {
@@ -40,22 +42,22 @@ const StyledWrapper = styled.nav`
 
 function Sidebar() {
   return (
-    <Router>
+    <BrowserRouter>
       <StyledWrapper>
-        <Link to="/1">
+        <StyledLink to="/dashboard">
           <StyledButtonIcon icon={trophyIcon} />
           <p>Dashboard</p>
-        </Link>
-        <StyledDiv>
+        </StyledLink>
+        <StyledLink to="/wallet">
           <StyledButtonIcon icon={walletIcon} />
           <p>My Wallet</p>
-        </StyledDiv>
-        <StyledDiv>
+        </StyledLink>
+        <StyledLink to="/graphs">
           <StyledButtonIcon icon={profitsIcon} />
           <p>Graphs</p>
-        </StyledDiv>
+        </StyledLink>
       </StyledWrapper>
-    </Router>
+    </BrowserRouter>
   );
 }
 
