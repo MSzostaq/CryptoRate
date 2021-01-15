@@ -7,8 +7,8 @@ const View = styled.div`
   position: relative;
 `;
 
-function Wallet() {
+function WalletView() {
   return <View />;
 }
 
-export default Wallet;
+export default WalletView;

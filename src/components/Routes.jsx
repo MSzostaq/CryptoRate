@@ -1,12 +1,12 @@
 import React from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
-import Dashboard from "views/Dashboard";
+import DashboardView from "views/DashboardView";
 
 function Routes() {
   return (
     <Router>
       <Route path="/">
-        <Dashboard />
+        <DashboardView />
       </Route>
     </Router>
   );

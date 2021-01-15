@@ -6,7 +6,7 @@ const View = styled.div`
   height: 100%;
 `;
 
-function Graphs() {
+function GraphsView() {
   return (
     <View>
       <p>hello</p>
@@ -14,4 +14,4 @@ function Graphs() {
   );
 }
 
-export default Graphs;
+export default GraphsView;
