@@ -5,8 +5,8 @@ const View = styled.div`
   background-color: #505050;
 `;
 
-function GraphsView() {
+function Graphs() {
   return <View></View>;
 }
 
-export default GraphsView;
+export default Graphs;

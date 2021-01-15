@@ -3,10 +3,12 @@ import styled from "styled-components";
 
 const View = styled.div`
   background-color: #202020;
+  height: 100%
+  position: relative;
 `;
 
-function WalletView() {
-  return <View></View>;
+function Wallet() {
+  return <View />;
 }
 
-export default WalletView;
+export default Wallet;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 import Sidebar from "components/Sidebar";
 import Graphs from "views/Graphs";
@@ -19,13 +19,15 @@ function Dashboard() {
     <ViewWrapper>
       <View>
         <Switch>
-          <Route path="/graphs">
+          <Route path="/dashboard">
             <Graphs />
           </Route>
           <Route path="/wallet">
             <Wallet />
           </Route>
-          <Redirect to="graphs" />
+          <Route path="/graphs">
+            <Graphs />
+          </Route>
         </Switch>
       </View>
       <Sidebar />
