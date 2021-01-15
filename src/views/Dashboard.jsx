@@ -10,26 +10,18 @@ const ViewWrapper = styled.div`
   position: relative;
 `;
 
-const View = styled.div`
-  height: 100%;
-`;
-
 function Dashboard() {
   return (
     <ViewWrapper>
-      <View>
-        <Switch>
-          <Route path="/dashboard">
-            <Graphs />
-          </Route>
-          <Route path="/wallet">
-            <Wallet />
-          </Route>
-          <Route path="/graphs">
-            <Graphs />
-          </Route>
-        </Switch>
-      </View>
+      <Switch>
+        <Route path="/dashboard" />
+        <Route path="/wallet">
+          <Wallet />
+        </Route>
+        <Route path="/graphs">
+          <Graphs />
+        </Route>
+      </Switch>
       <Sidebar />
     </ViewWrapper>
   );

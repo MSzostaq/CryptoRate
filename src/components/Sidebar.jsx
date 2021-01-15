@@ -21,9 +21,6 @@ const StyledLink = styled(Link)`
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
   }
-  &:active {
-    background-color: #ffffff;
-  }
 `;
 
 const StyledButtonIcon = styled(ButtonIcon)`
@@ -52,7 +49,7 @@ function Sidebar() {
           <StyledButtonIcon icon={trophyIcon} />
           <p>Dashboard</p>
         </StyledLink>
-        <StyledLink to="/wallet">
+        <StyledLink to="/mywallet">
           <StyledButtonIcon icon={walletIcon} />
           <p>My Wallet</p>
         </StyledLink>

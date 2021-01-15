@@ -3,7 +3,7 @@ import Routes from "components/Routes";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Routes />
     </div>
   );
