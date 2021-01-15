@@ -1,5 +1,5 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
+import { Link, Router } from "react-router-dom";
 // import { motion } from "framer-motion";
 import styled from "styled-components";
 import ButtonIcon from "components/ButtonIcon";
@@ -40,20 +40,22 @@ const StyledWrapper = styled.nav`
 
 function Sidebar() {
   return (
-    <StyledWrapper>
-      <StyledDiv>
-        <StyledButtonIcon icon={trophyIcon} />
-        <p>Dashboard</p>
-      </StyledDiv>
-      <StyledDiv>
-        <StyledButtonIcon icon={walletIcon} />
-        <p>My Wallet</p>
-      </StyledDiv>
-      <StyledDiv>
-        <StyledButtonIcon icon={profitsIcon} />
-        <p>Graphs</p>
-      </StyledDiv>
-    </StyledWrapper>
+    <Router>
+      <StyledWrapper>
+        <Link to="/1">
+          <StyledButtonIcon icon={trophyIcon} />
+          <p>Dashboard</p>
+        </Link>
+        <StyledDiv>
+          <StyledButtonIcon icon={walletIcon} />
+          <p>My Wallet</p>
+        </StyledDiv>
+        <StyledDiv>
+          <StyledButtonIcon icon={profitsIcon} />
+          <p>Graphs</p>
+        </StyledDiv>
+      </StyledWrapper>
+    </Router>
   );
 }
 

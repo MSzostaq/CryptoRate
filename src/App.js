@@ -1,11 +1,11 @@
 import React from "react";
-import Sidebar from "components/Sidebar";
+import Routes from "components/Routes";
 
 function App() {
   return (
     <div>
       <h1>Hello</h1>
-      <Sidebar />
+      <Routes />
     </div>
   );
 }
