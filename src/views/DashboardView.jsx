@@ -6,8 +6,10 @@ import GraphsView from "views/GraphsView";
 import WalletView from "views/WalletView";
 
 const ViewWrapper = styled.div`
+  width: 100%;
   height: 100%;
-  position: relative;
+  position: fixed;
+  background-color: #000000;
 `;
 
 function DashboardView() {

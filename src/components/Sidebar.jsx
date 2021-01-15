@@ -17,7 +17,6 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   width: 180px;
   height: 60px;
-
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
   }
