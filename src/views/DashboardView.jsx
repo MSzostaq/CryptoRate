@@ -9,7 +9,6 @@ const ViewWrapper = styled.div`
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: #000000;
 `;
 
 function DashboardView() {
