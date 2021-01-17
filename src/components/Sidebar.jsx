@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { motion } from "framer-motion";
 import styled from "styled-components";
 import ButtonIcon from "components/ButtonIcon";
@@ -32,32 +32,26 @@ const StyledWrapper = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
   width: 180px;
   height: 100%;
 `;
 
-function Sidebar() {
+function Sidebar({ className }) {
   return (
-    <BrowserRouter>
-      <StyledWrapper>
-        <StyledLink to="/dashboard">
-          <StyledButtonIcon icon={trophyIcon} />
-          <p>Dashboard</p>
-        </StyledLink>
-        <StyledLink to="/mywallet">
-          <StyledButtonIcon icon={walletIcon} />
-          <p>My Wallet</p>
-        </StyledLink>
-        <StyledLink to="/graphs">
-          <StyledButtonIcon icon={profitsIcon} />
-          <p>Graphs</p>
-        </StyledLink>
-      </StyledWrapper>
-    </BrowserRouter>
+    <StyledWrapper className={className}>
+      <StyledLink to="/dashboard">
+        <StyledButtonIcon icon={trophyIcon} />
+        <p>Dashboard</p>
+      </StyledLink>
+      <StyledLink to="/mywallet">
+        <StyledButtonIcon icon={walletIcon} />
+        <p>My Wallet</p>
+      </StyledLink>
+      <StyledLink to="/graphs">
+        <StyledButtonIcon icon={profitsIcon} />
+        <p>Graphs</p>
+      </StyledLink>
+    </StyledWrapper>
   );
 }
 

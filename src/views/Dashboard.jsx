@@ -2,18 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const View = styled.div`
-  background-color: #505050;
+  background-color: #ff0000;
   width: 100%;
   height: 100%;
   position: fixed;
 `;
 
-function GraphsView() {
-  return (
-    <View>
-      <p>hello</p>
-    </View>
-  );
+function Dashboard() {
+  return <View></View>;
 }
 
-export default GraphsView;
+export default Dashboard;

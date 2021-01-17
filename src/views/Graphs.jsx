@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const View = styled.div`
-  background-color: #202020;
+  background-color: #505050;
   width: 100%;
   height: 100%;
-  position: relative;
+  position: fixed;
 `;
 
-function WalletView() {
-  return <View />;
+function Graphs() {
+  return <View></View>;
 }
 
-export default WalletView;
+export default Graphs;
