@@ -20,15 +20,14 @@ const StyledLink = styled(Link)`
 `;
 
 const StyledIcon = styled(Icon)`
-  color: #636363;
-  flex-shrink: 0;
+  color: #000;
   padding: 10px 10px 10px 18px;
   width: 56px;
   height: 56px;
 `;
 
 const StyledWrapper = styled.nav`
-  background-color: #87cefa;
+  background-color: #b8b8b8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,7 +39,7 @@ function Sidebar({ className }) {
   return (
     <StyledWrapper className={className}>
       <StyledLink to="/dashboard">
-        <StyledIcon icon="atm" />
+        <StyledIcon icon="add" />
         <p>Dashboard</p>
       </StyledLink>
       <StyledLink to="/mywallet">
