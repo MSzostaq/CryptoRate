@@ -8,15 +8,15 @@ import Graphs from "views/Graphs";
 import Wallet from "views/Wallet";
 
 const ViewWrapper = styled.div`
-  background-color: #ffe4e1;
+  background-color: #dcdcdc;
   position: relative;
   height: 100%;
 `;
 
 const StyledHeader = styled(Header)`
-  width: 100%;
   position: fixed;
   top: 0;
+  width: 100%;
 `;
 
 const StyledSidebar = styled(Sidebar)`

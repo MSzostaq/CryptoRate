@@ -12,10 +12,16 @@ const View = styled.div`
   height: 90%;
 `;
 
+const StyledHeading = styled.h1`
+  font-size: 48px;
+  font-weight: bold;
+  padding: 15px;
+`;
+
 function Wallet() {
   return (
     <View>
-      <h1>My Wallet</h1>
+      <StyledHeading>My Wallet</StyledHeading>
     </View>
   );
 }

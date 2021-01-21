@@ -27,7 +27,7 @@ const StyledIcon = styled(Icon)`
 `;
 
 const StyledWrapper = styled.nav`
-  background-color: #ffe4e1;
+  background-color: #dcdcdc;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +43,7 @@ function Sidebar({ className }) {
         <StyledIcon icon="add" />
         <p>Dashboard</p>
       </StyledLink>
-      <StyledLink to="/mywallet">
+      <StyledLink to="/wallet">
         <StyledIcon icon="caretDown" />
         <p>My Wallet</p>
       </StyledLink>
