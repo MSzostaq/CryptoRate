@@ -2,17 +2,28 @@ import React from "react";
 import styled from "styled-components";
 
 const View = styled.div`
-  background-color: #ff0000;
+  background-color: #f8f8f8;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: 48px;
+  bottom: 24px;
+  right: 24px;
   border-radius: 30px;
-  width: 89%;
-  height: 93%;
+  width: 88%;
+  height: 90%;
+`;
+
+const StyledHeading = styled.h1`
+  font-size: 48px;
+  font-weight: bold;
+  padding: 15px;
 `;
 
 function Dashboard() {
-  return <View></View>;
+  return (
+    <View>
+      <StyledHeading>Home</StyledHeading>
+    </View>
+  );
 }
 
 export default Dashboard;

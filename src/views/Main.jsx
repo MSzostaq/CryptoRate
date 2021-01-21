@@ -8,7 +8,7 @@ import Graphs from "views/Graphs";
 import Wallet from "views/Wallet";
 
 const ViewWrapper = styled.div`
-  padding-left: 175px;
+  background-color: #ffe4e1;
   position: relative;
   height: 100%;
 `;

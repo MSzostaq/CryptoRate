@@ -3,18 +3,18 @@ import styled from "styled-components";
 import Icon from "components/Icon";
 
 const Heading = styled.div`
-  background-color: #b8b8b8;
+  background-color: #ffe4e1;
   position fixed;
   width: 100%;
   height: 60px;
 `;
 
 const StyledIcon = styled(Icon)`
-  margin: 4px 4px;
+  margin: 4px;
   padding: 2px;
   position fixed;
-  top: 0;
-  right: 0;
+  top: 4px;
+  right: 4px;
   width: 32px;
   height: 32px;
 `;
