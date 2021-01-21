@@ -8,20 +8,19 @@ import Graphs from "views/Graphs";
 import Wallet from "views/Wallet";
 
 const ViewWrapper = styled.div`
-  padding-left: 180px;
+  padding-left: 175px;
   position: relative;
   height: 100%;
 `;
 
 const StyledHeader = styled(Header)`
   width: 100%;
-  height: 40px;
-  position: absolute;
+  position: fixed;
   top: 0;
 `;
 
 const StyledSidebar = styled(Sidebar)`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 `;

@@ -31,6 +31,7 @@ const StyledWrapper = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: fixed;
   width: 180px;
   height: 100%;
 `;
