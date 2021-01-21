@@ -7,23 +7,34 @@ import Icon from "components/Icon";
 const StyledLink = styled(Link)`
   align-items: center;
   border-radius: 4px;
-  color: inherit;
+  color: #696969;
   display: flex;
   flex-direction: row;
   margin-bottom: 24px;
   text-decoration: none;
-  width: 180px;
+  width: 170px;
   height: 60px;
+
+  &:active {
+    color: #000;
+    font-weight: bold;
+  }
+
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
   }
 `;
 
 const StyledIcon = styled(Icon)`
-  color: #000;
+  color: #696969;
   padding: 10px 10px 10px 18px;
   width: 56px;
   height: 56px;
+
+  &:active {
+    color: #000;
+    font-weight: bold;
+  }
 `;
 
 const StyledWrapper = styled.nav`
@@ -40,7 +51,7 @@ function Sidebar({ className }) {
   return (
     <StyledWrapper className={className}>
       <StyledLink to="/dashboard">
-        <StyledIcon icon="add" />
+        <StyledIcon icon="add" activeclass="active" />
         <p>Dashboard</p>
       </StyledLink>
       <StyledLink to="/wallet">
