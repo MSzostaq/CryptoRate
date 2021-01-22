@@ -15,7 +15,7 @@ const View = styled.div`
 const StyledHeading = styled.h1`
   font-size: 48px;
   font-weight: bold;
-  padding: 15px;
+  padding: 16px;
 `;
 
 function Wallet() {
