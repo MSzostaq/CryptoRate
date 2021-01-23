@@ -51,7 +51,7 @@ function Sidebar({ className }) {
   return (
     <StyledWrapper className={className}>
       <StyledLink to="/dashboard">
-        <StyledIcon icon="add" activeclass="active" />
+        <StyledIcon icon="add" />
         <p>Dashboard</p>
       </StyledLink>
       <StyledLink to="/wallet">
