@@ -1,28 +1,34 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Icon from "components/Icon";
 
 const Heading = styled.div`
   background-color: #dcdcdc;
-  position fixed;
+  position: fixed;
   width: 100%;
   height: 60px;
 `;
 
 const StyledIcon = styled(Icon)`
-  margin: 4px;
-  padding: 2px;
-  position fixed;
-  top: 4px;
-  right: 4px;
-  width: 32px;
-  height: 32px;
+  position: fixed;
+  top: 2px;
+  right: 16px;
+  width: 48px;
+  height: 48px;
+`;
+
+const StyledLink = styled(Link)`
+  color: #696969;
+  text-decoration: none;
 `;
 
 function Header() {
   return (
     <Heading>
-      <StyledIcon icon="close" />
+      <StyledLink>
+        <StyledIcon icon="user" />
+      </StyledLink>
     </Heading>
   );
 }

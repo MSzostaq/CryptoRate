@@ -51,15 +51,15 @@ function Sidebar({ className }) {
   return (
     <StyledWrapper className={className}>
       <StyledLink to="/dashboard">
-        <StyledIcon icon="add" />
+        <StyledIcon icon="analytics" />
         <p>Dashboard</p>
       </StyledLink>
       <StyledLink to="/wallet">
-        <StyledIcon icon="caretDown" />
+        <StyledIcon icon="wallet" />
         <p>My Wallet</p>
       </StyledLink>
       <StyledLink to="/graphs">
-        <StyledIcon icon="caretDown" />
+        <StyledIcon icon="profit" />
         <p>Graphs</p>
       </StyledLink>
     </StyledWrapper>

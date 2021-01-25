@@ -4,7 +4,7 @@ import styled from "styled-components";
 const View = styled.div`
   background-color: #f8f8f8;
   position: absolute;
-  top: 48px;
+  top: 56px;
   bottom: 24px;
   right: 24px;
   border-radius: 30px;
