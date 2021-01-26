@@ -5,13 +5,13 @@ import styled from "styled-components";
 import Icon from "components/Icon";
 
 const StyledIcon = styled(Icon)`
-  color: #696969;
+  color: #d3d3d3;
   padding: 10px 10px 10px 18px;
   width: 56px;
   height: 56px;
 
   &:active {
-    color: #000;
+    color: #fff;
     font-weight: bold;
   }
 `;
@@ -19,31 +19,21 @@ const StyledIcon = styled(Icon)`
 const StyledLink = styled(Link)`
   align-items: center;
   border-radius: 4px;
-  color: #696969;
+  color: #d3d3d3;
   display: flex;
   flex-direction: row;
   margin-bottom: 24px;
   text-decoration: none;
-  width: 170px;
-  height: 60px;
-
-  &:active {
-    color: #000;
-    font-weight: bold;
-  }
-
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+  height: 64px;
 `;
 
 const StyledWrapper = styled.nav`
-  background-color: #dcdcdc;
+  background-color: #0f5298;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: fixed;
-  width: 160px;
+  width: 64px;
   height: 100%;
 `;
 
@@ -52,15 +42,12 @@ function Sidebar() {
     <StyledWrapper>
       <StyledLink to="/dashboard">
         <StyledIcon icon="analytics" />
-        <p>Dashboard</p>
       </StyledLink>
       <StyledLink to="/wallet">
         <StyledIcon icon="wallet" />
-        <p>My Wallet</p>
       </StyledLink>
       <StyledLink to="/graphs">
         <StyledIcon icon="profit" />
-        <p>Graphs</p>
       </StyledLink>
     </StyledWrapper>
   );

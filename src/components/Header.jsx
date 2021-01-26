@@ -7,13 +7,13 @@ const Heading = styled.div`
   background-color: #dcdcdc;
   position: fixed;
   width: 100%;
-  height: 60px;
+  height: 64px;
 `;
 
 const StyledIcon = styled(Icon)`
   position: fixed;
-  top: 2px;
-  right: 16px;
+  top: 8px;
+  right: 8px;
   width: 48px;
   height: 48px;
 

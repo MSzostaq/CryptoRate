@@ -5,13 +5,11 @@ import Card from "components/Card";
 const View = styled.div`
   background-color: #f8f8f8;
   display: grid;
-  position: absolute;
-  top: 56px;
-  bottom: 24px;
-  right: 24px;
-  border-radius: 30px;
-  width: 88%;
-  height: 90%;
+  position: fixed;
+  top: 64px;
+  bottom: 0;
+  right: 0;
+  left: 64px;
 `;
 
 const StyledHeading = styled.h1`
@@ -35,7 +33,7 @@ const MidWrapper = styled.div`
 const BottomWrapper = styled.div`
   display: grid;
   grid-template-columns: 1.25fr 0.5fr 0.5fr;
-  height: 200px;
+  height: 210px;
 `;
 
 function Dashboard() {
