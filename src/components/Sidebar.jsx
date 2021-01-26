@@ -4,6 +4,18 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Icon from "components/Icon";
 
+const StyledIcon = styled(Icon)`
+  color: #696969;
+  padding: 10px 10px 10px 18px;
+  width: 56px;
+  height: 56px;
+
+  &:active {
+    color: #000;
+    font-weight: bold;
+  }
+`;
+
 const StyledLink = styled(Link)`
   align-items: center;
   border-radius: 4px;
@@ -25,18 +37,6 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const StyledIcon = styled(Icon)`
-  color: #696969;
-  padding: 10px 10px 10px 18px;
-  width: 56px;
-  height: 56px;
-
-  &:active {
-    color: #000;
-    font-weight: bold;
-  }
-`;
-
 const StyledWrapper = styled.nav`
   background-color: #dcdcdc;
   display: flex;
@@ -47,9 +47,9 @@ const StyledWrapper = styled.nav`
   height: 100%;
 `;
 
-function Sidebar({ className }) {
+function Sidebar() {
   return (
-    <StyledWrapper className={className}>
+    <StyledWrapper>
       <StyledLink to="/dashboard">
         <StyledIcon icon="analytics" />
         <p>Dashboard</p>

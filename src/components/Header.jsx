@@ -16,6 +16,11 @@ const StyledIcon = styled(Icon)`
   right: 16px;
   width: 48px;
   height: 48px;
+
+  &:active {
+    color: #000;
+    font-weight: bold;
+  }
 `;
 
 const StyledLink = styled(Link)`

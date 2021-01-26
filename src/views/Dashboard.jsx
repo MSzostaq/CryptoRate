@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Card from "components/Card";
 
 const View = styled.div`
   background-color: #f8f8f8;
@@ -21,7 +22,9 @@ const StyledHeading = styled.h1`
 function Dashboard() {
   return (
     <View>
-      <StyledHeading>Home</StyledHeading>
+      <StyledHeading>Dashboard</StyledHeading>
+      <Card />
+      <Card />
     </View>
   );
 }
