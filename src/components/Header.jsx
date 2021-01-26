@@ -4,13 +4,26 @@ import styled from "styled-components";
 import Icon from "components/Icon";
 
 const Heading = styled.div`
-  background-color: #dcdcdc;
+  background-color: #fff;
   position: fixed;
   width: 100%;
   height: 64px;
 `;
 
-const StyledIcon = styled(Icon)`
+const StyledAlertIcon = styled(Icon)`
+  position: fixed;
+  top: 18px;
+  right: 72px;
+  width: 32px;
+  height: 32px;
+
+  &:active {
+    color: #000;
+    font-weight: bold;
+  }
+`;
+
+const StyledProfileIcon = styled(Icon)`
   position: fixed;
   top: 8px;
   right: 8px;
@@ -32,7 +45,8 @@ function Header() {
   return (
     <Heading>
       <StyledLink>
-        <StyledIcon icon="user" />
+        <StyledProfileIcon icon="user" />
+        <StyledAlertIcon icon="notification" />
       </StyledLink>
     </Heading>
   );
