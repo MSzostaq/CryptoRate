@@ -19,6 +19,10 @@ const StyledHeading = styled.h1`
 `;
 
 const StyledDropdown = styled(Dropdown)`
+  margin: 12px;
+  position: fixed;
+  top: 160px;
+  left: 80px;
   width: 320px;
 `;
 

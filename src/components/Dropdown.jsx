@@ -37,8 +37,7 @@ const Items = styled.ul`
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   position: absolute;
-  top: 40px;
-  width: 200px;
+  width: 320px;
 `;
 
 const Item = styled.li`
