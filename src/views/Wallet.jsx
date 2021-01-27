@@ -5,7 +5,6 @@ import Card from "components/Card";
 const View = styled.div`
   background-color: #f8f8f8;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   position: fixed;
   top: 64px;
   bottom: 0;
@@ -19,46 +18,32 @@ const StyledHeading = styled.h1`
   padding: 16px;
 `;
 
-const LeftSide = styled.div`
+const MidWrapper = styled.div`
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  padding: 12px;
-  position: fixed;
-  bottom: 0;
-  left: 70px;
-  width: 600px;
-  height: 600px;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  height: 240px;
 `;
 
-const RightSide = styled.div`
+const BottomWrapper = styled.div`
   display: grid;
-  padding: 12px;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  width: 300px;
-  height: 600px;
-`;
-
-const LeftSideCard = styled(Card)`
-  box-shadow: 1px 1px 1px 1px #696969;
-`;
-
-const RightSideCard = styled(Card)`
-  box-shadow: 1px 1px 1px 1px #696969;
+  grid-template-columns: 1.25fr 0.5fr;
+  height: 310px;
 `;
 
 function Wallet() {
   return (
     <View>
       <StyledHeading>My Wallet</StyledHeading>
-      <LeftSide>
-        <LeftSideCard />
-        <LeftSideCard />
-      </LeftSide>
-      <RightSide>
-        <RightSideCard />
-      </RightSide>
+      <MidWrapper>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </MidWrapper>
+      <BottomWrapper>
+        <Card />
+        <Card />
+      </BottomWrapper>
     </View>
   );
 }

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Icon from "components/Icon";
 
 const Heading = styled.div`
-  background-color: #fff;
+  background-color: #f8f8f8;
   position: fixed;
   width: 100%;
   height: 64px;
