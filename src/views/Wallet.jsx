@@ -15,16 +15,17 @@ const View = styled.div`
 const StyledHeading = styled.h1`
   font-size: 48px;
   font-weight: bold;
-  padding: 16px;
+  height: 100px;
+  padding: 15px;
 `;
 
-const MidWrapper = styled.div`
+const SmallCardWrapper = styled.div`
   display: grid;
   grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
   height: 240px;
 `;
 
-const BottomWrapper = styled.div`
+const BigCardWrapper = styled.div`
   display: grid;
   grid-template-columns: 1.25fr 0.5fr;
   height: 310px;
@@ -34,16 +35,16 @@ function Wallet() {
   return (
     <View>
       <StyledHeading>My Wallet</StyledHeading>
-      <MidWrapper>
+      <BigCardWrapper>
+        <Card />
+        <Card />
+      </BigCardWrapper>
+      <SmallCardWrapper>
         <Card />
         <Card />
         <Card />
         <Card />
-      </MidWrapper>
-      <BottomWrapper>
-        <Card />
-        <Card />
-      </BottomWrapper>
+      </SmallCardWrapper>
     </View>
   );
 }

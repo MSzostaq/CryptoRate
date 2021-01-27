@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import Dropdown from "components/Dropdown";
 
 const View = styled.div`
   background-color: #f8f8f8;
@@ -17,10 +18,27 @@ const StyledHeading = styled.h1`
   padding: 15px;
 `;
 
+const StyledDropdown = styled(Dropdown)`
+  width: 320px;
+`;
+
 function Graphs() {
+  const [selectedValue, setSelectedValue] = useState(null);
+  const items = [
+    { id: "btc", name: "BitCoin" },
+    { id: "eth", name: "Ether" },
+  ];
+  function onValueChange(value) {
+    setSelectedValue(value);
+  }
   return (
     <View>
       <StyledHeading>Graphs</StyledHeading>
+      <StyledDropdown
+        items={items}
+        value={selectedValue}
+        onChange={onValueChange}
+      />
     </View>
   );
 }
