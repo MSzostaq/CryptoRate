@@ -43,6 +43,9 @@ function Sidebar() {
       <StyledLink to="/graphs">
         <StyledIcon icon="profit" />
       </StyledLink>
+      <StyledLink to="/login">
+        <StyledIcon icon="logout" />
+      </StyledLink>
     </StyledWrapper>
   );
 }
