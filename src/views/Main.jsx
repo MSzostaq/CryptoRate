@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 import Header from "components/Header";
 import Sidebar from "components/Sidebar";
@@ -29,7 +29,6 @@ function Main() {
   return (
     <ViewWrapper>
       <StyledHeader />
-      <StyledSidebar />
       <Switch>
         <Route path="/dashboard">
           <Dashboard />
@@ -40,7 +39,9 @@ function Main() {
         <Route path="/graphs">
           <Graphs />
         </Route>
+        <Redirect to="/dashboard" />
       </Switch>
+      <StyledSidebar />
     </ViewWrapper>
   );
 }
