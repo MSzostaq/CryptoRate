@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { motion } from "framer-motion";
 import styled from "styled-components";
 import Icon from "components/Icon";
 
@@ -9,11 +8,6 @@ const StyledIcon = styled(Icon)`
   padding: 10px 10px 10px 18px;
   width: 56px;
   height: 56px;
-
-  &:active {
-    color: #fff;
-    font-weight: bold;
-  }
 `;
 
 const StyledLink = styled(Link)`

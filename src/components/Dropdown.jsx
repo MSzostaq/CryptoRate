@@ -37,6 +37,8 @@ const Items = styled.ul`
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   position: absolute;
+  top: 160px;
+  left: 26px;
   width: 320px;
 `;
 
@@ -68,7 +70,7 @@ function Dropdown({ className, items, onChange, value }) {
   return (
     <>
       <ToggleButton className={className} onClick={onToggleButtonClick}>
-        <Prompt>{value ? getItemById(value).name : "Select item..."}</Prompt>
+        <Prompt>{value ? getItemById(value).name : "Select crypto..."}</Prompt>
         <CaretIcon icon="caretDown" />
       </ToggleButton>
       <Items>
