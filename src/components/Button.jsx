@@ -6,8 +6,6 @@ const Button = styled.button`
   font-size: 24px;
   margin: 8px;
   padding: 8px;
-  width: 240px;
-  height: 48px;
 `;
 
 export default Button;

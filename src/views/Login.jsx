@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Button from "components/Button";
 
@@ -9,11 +10,19 @@ const View = styled.div`
   height: 100%;
 `;
 
-const StyledButton = styled(Button)`
-  margin: 12px;
+const PrimaryButton = styled(Button)`
+  color: #696969;
+  width: 420px;
+  height: 48px;
+`;
+
+const SecondaryButton = styled(Button)`
+  width: 240px;
+  height: 48px;
 `;
 
 const StyledWrapper = styled.div`
+  display: grid;
   position: fixed;
   top: 240px;
   left: 24px;
@@ -35,10 +44,18 @@ function Login() {
         <h1>CryptoRate</h1>
       </StyledHeading>
       <StyledWrapper>
-        <StyledButton>Enter Your Email</StyledButton>
-        <StyledButton>Enter Your Password</StyledButton>
-        <StyledButton>Login</StyledButton>
-        <StyledButton>Create Account</StyledButton>
+        <Link>
+          <PrimaryButton>Enter Your Email</PrimaryButton>
+        </Link>
+        <Link>
+          <PrimaryButton>Enter Your Password</PrimaryButton>
+        </Link>
+        <Link to="/dashboard">
+          <SecondaryButton>Login</SecondaryButton>
+        </Link>
+        <Link>
+          <SecondaryButton>Create Account</SecondaryButton>
+        </Link>
       </StyledWrapper>
     </View>
   );
