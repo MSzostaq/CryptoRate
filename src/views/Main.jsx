@@ -43,7 +43,7 @@ function Main() {
         <Route path="/login">
           <Login />
         </Route>
-        <Redirect to="/dashboard" />
+        <Redirect to="/login" />
       </Switch>
       <StyledSidebar />
     </ViewWrapper>

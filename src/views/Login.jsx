@@ -22,18 +22,22 @@ const SecondaryButton = styled(Button)`
 `;
 
 const StyledWrapper = styled.div`
+  align-content: center;
+  background-color: #0f5298;
   display: grid;
-  position: fixed;
-  top: 240px;
+  grid-gap: 20px;
+  top: 48px;
   left: 24px;
-  width: 320px;
-  height: 320px;
+  width: 480px;
+  height: 100%;
 `;
 
 const StyledHeading = styled.h1`
+  background-color: #0f5298;
   font-size: 64px;
   font-weight: bold;
   position: absolute;
+  width: 480px;
   height: 120px;
 `;
 
