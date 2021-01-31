@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import ModalsProvider from "components/ModalsProvider";
+import Modals from "components/Modals";
 import Routes from "components/Routes";
 
 const StyledApp = styled.div`
@@ -9,7 +11,10 @@ const StyledApp = styled.div`
 function App() {
   return (
     <StyledApp>
-      <Routes />
+      <ModalsProvider>
+        <Routes />
+        <Modals />
+      </ModalsProvider>
     </StyledApp>
   );
 }
