@@ -119,7 +119,9 @@ function Dropdown({ className, items, onChange, value }) {
         data-dropdown-toggle={dropdownId}
         onClick={onToggleButtonClick}
       >
-        <Prompt>{value ? getItemById(value).name : "Select item..."}</Prompt>
+        <Prompt>
+          {value ? getItemById(value).name : "Select cryptocurrency..."}
+        </Prompt>
         <CaretIcon icon="caretDown" />
       </ToggleButton>
       {isOpen && (
