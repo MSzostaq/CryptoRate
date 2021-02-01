@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Button from "components/Button";
+import Placeholder from "components/Placeholder";
 
 const View = styled.div`
   background-color: #f8f8f8;
@@ -10,15 +11,19 @@ const View = styled.div`
   height: 100%;
 `;
 
-const PrimaryButton = styled(Button)`
+const StyledPlaceholder = styled(Placeholder)`
   color: #696969;
-  width: 420px;
+  width: 320px;
   height: 48px;
+  position: relative;
+  left: 32px;
 `;
 
-const SecondaryButton = styled(Button)`
+const StyledButton = styled(Button)`
   width: 240px;
-  height: 48px;
+  height: 40px;
+  position: relative;
+  left: 32px;
 `;
 
 const StyledWrapper = styled.div`
@@ -26,18 +31,17 @@ const StyledWrapper = styled.div`
   background-color: #0f5298;
   display: grid;
   grid-gap: 20px;
-  top: 48px;
-  left: 24px;
-  width: 480px;
+  width: 600px;
   height: 100%;
 `;
 
 const StyledHeading = styled.h1`
   background-color: #0f5298;
+  color: #d3d3d3;
   font-size: 64px;
   font-weight: bold;
   position: absolute;
-  width: 480px;
+  width: 600px;
   height: 120px;
 `;
 
@@ -49,16 +53,30 @@ function Login() {
       </StyledHeading>
       <StyledWrapper>
         <Link>
-          <PrimaryButton>Enter Your Email</PrimaryButton>
+          <StyledPlaceholder
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Enter Your Email
+          </StyledPlaceholder>
         </Link>
         <Link>
-          <PrimaryButton>Enter Your Password</PrimaryButton>
+          <StyledPlaceholder
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Enter Your Password
+          </StyledPlaceholder>
         </Link>
         <Link to="/dashboard">
-          <SecondaryButton>Login</SecondaryButton>
+          <StyledButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            Login
+          </StyledButton>
         </Link>
         <Link>
-          <SecondaryButton>Create Account</SecondaryButton>
+          <StyledButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            Create Account
+          </StyledButton>
         </Link>
       </StyledWrapper>
     </View>
