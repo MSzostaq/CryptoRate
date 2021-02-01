@@ -158,6 +158,15 @@ button {
   padding: 0;
 }
 
+input {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  padding: 0;
+}
+
 #root {
   height: 100%;
 }

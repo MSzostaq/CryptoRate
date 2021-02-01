@@ -1,26 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import Button from "components/Button";
-import Placeholder from "components/Placeholder";
 
 const View = styled.div`
   background-color: #f8f8f8;
   display: grid;
+  left: 600px;
   width: 100%;
   height: 100%;
 `;
 
-const StyledPlaceholder = styled(Placeholder)`
-  color: #696969;
-  width: 320px;
-  height: 48px;
+const StyledButton = styled(Button)`
+  width: 240px;
+  height: 40px;
   position: relative;
   left: 32px;
 `;
 
-const StyledButton = styled(Button)`
-  width: 240px;
+const StyledInput = styled(motion.input)`
+  background-color: #d3d3d3;
+  border-radius: 12px;
+  font-size: 24px;
+  margin: 8px;
+  padding: 8px;
+  width: 320px;
   height: 40px;
   position: relative;
   left: 32px;
@@ -52,22 +57,16 @@ function Login() {
         <h1>CryptoRate</h1>
       </StyledHeading>
       <StyledWrapper>
-        <Link>
-          <StyledPlaceholder
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Enter Your Email
-          </StyledPlaceholder>
-        </Link>
-        <Link>
-          <StyledPlaceholder
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Enter Your Password
-          </StyledPlaceholder>
-        </Link>
+        <StyledInput
+          type="text"
+          placeholder="Enter Your Email"
+          whileHover={{ scale: 1.05 }}
+        />
+        <StyledInput
+          type="text"
+          placeholder="Password"
+          whileHover={{ scale: 1.05 }}
+        />
         <Link to="/dashboard">
           <StyledButton whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             Login
