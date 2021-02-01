@@ -50,11 +50,15 @@ const StyledHeading = styled.h1`
   height: 120px;
 `;
 
+const StyledAppName = styled.h1`
+  padding: 8px;
+`;
+
 function Login() {
   return (
     <View>
       <StyledHeading>
-        <h1>CryptoRate</h1>
+        <StyledAppName>CryptoRate</StyledAppName>
       </StyledHeading>
       <StyledWrapper>
         <StyledInput
