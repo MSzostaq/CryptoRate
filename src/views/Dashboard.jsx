@@ -31,9 +31,11 @@ const Heading = styled(Card)`
   height: 64px;
 
   @media (max-width: 800px) {
-    grid-template-columns: 1fr;
+    display: grid;
     position: fixed;
+    top: 140px;
     left: 0;
+    width: 100%;
 `;
 
 const MidWrapper = styled.div`
@@ -45,7 +47,9 @@ const MidWrapper = styled.div`
     grid-template-columns: 1fr;
     height: 420px;
     position: fixed;
+    top: 240px;
     left: 0;
+    width: 100%;
   }
 `;
 
@@ -55,10 +59,12 @@ const BottomWrapper = styled.div`
   height: 210px;
 
   @media (max-width: 800px) {
-    grid-template-columns: 1fr;
+    grid-template-colums: 1fr;
     height: 380px;
     position: fixed;
+    top: 740px;
     left: 0;
+    width: 100%;
   }
 `;
 
