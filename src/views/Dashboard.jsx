@@ -10,6 +10,9 @@ const View = styled.div`
   bottom: 0;
   right: 0;
   left: 64px;
+  @media (max-width: 800px) {
+    position: fixed;
+    left: 0;
 `;
 
 const StyledHeading = styled.h1`
@@ -17,23 +20,46 @@ const StyledHeading = styled.h1`
   font-weight: bold;
   height: 100px;
   padding: 15px;
+
+  @media (max-width: 800px) {
+    position: fixed;
+    left: 0;
 `;
 
 const Heading = styled(Card)`
   width: 1fr;
   height: 64px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    position: fixed;
+    left: 0;
 `;
 
 const MidWrapper = styled.div`
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
   height: 260px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    height: 420px;
+    position: fixed;
+    left: 0;
+  }
 `;
 
 const BottomWrapper = styled.div`
   display: grid;
   grid-template-columns: 1.25fr 0.5fr 0.5fr;
   height: 210px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    height: 380px;
+    position: fixed;
+    left: 0;
+  }
 `;
 
 function Dashboard() {

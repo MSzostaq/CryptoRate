@@ -29,6 +29,15 @@ const StyledWrapper = styled.nav`
   position: fixed;
   width: 64px;
   height: 100%;
+
+  @media (max-width: 800px) {
+    flex-direction: row;
+    grid-gap: 48px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 64px;
+  }
 `;
 
 function Sidebar() {
