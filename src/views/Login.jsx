@@ -36,7 +36,7 @@ const StyledWrapper = styled.div`
   background-color: #0f5298;
   display: grid;
   grid-gap: 20px;
-  width: 600px;
+  width: 40%;
   height: 100%;
 `;
 
@@ -46,12 +46,20 @@ const StyledHeading = styled.h1`
   font-size: 64px;
   font-weight: bold;
   position: absolute;
-  width: 600px;
+  width: 40%;
   height: 120px;
 `;
 
 const StyledAppName = styled.h1`
   padding: 8px;
+`;
+
+const StyledLeftSide = styled.div`
+  background-color: #f8f8f8;
+  position: absolute;
+  right: 0;
+  width: 60%;
+  height: 100%;
 `;
 
 function Login() {
@@ -60,6 +68,7 @@ function Login() {
       <StyledHeading>
         <StyledAppName>CryptoRate</StyledAppName>
       </StyledHeading>
+      <StyledLeftSide />
       <StyledWrapper>
         <StyledInput
           type="text"
