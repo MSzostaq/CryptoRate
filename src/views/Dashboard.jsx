@@ -10,6 +10,7 @@ const View = styled.div`
   bottom: 0;
   right: 0;
   left: 64px;
+
   @media (max-width: 800px) {
     position: fixed;
     left: 0;
@@ -19,7 +20,7 @@ const StyledHeading = styled.h1`
   font-size: 48px;
   font-weight: bold;
   height: 100px;
-  padding: 15px;
+  padding: 16px;
 
   @media (max-width: 800px) {
     position: fixed;

@@ -10,25 +10,47 @@ const View = styled.div`
   bottom: 0;
   right: 0;
   left: 64px;
+
+  @media (max-width: 800px) {
+    position: fixed;
+    letf: 0;
+  }
 `;
 
 const StyledHeading = styled.h1`
   font-size: 48px;
   font-weight: bold;
   height: 100px;
-  padding: 15px;
-`;
+  padding: 16px;
 
-const SmallCardWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
-  height: 240px;
+  @media (max-width: 800px) {
+    position: fixed;
+    left: 0;
+  }
 `;
 
 const BigCardWrapper = styled.div`
   display: grid;
   grid-template-columns: 1.25fr 0.5fr;
   height: 310px;
+
+  @media (max-width: 1250px) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 420px;
+  }
+`;
+
+const SmallCardWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  height: 240px;
+
+  @media (max-width: 1250px) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 200px;
+  }
 `;
 
 function Wallet() {

@@ -9,8 +9,9 @@ import Login from "views/Login";
 import Wallet from "views/Wallet";
 
 const ViewWrapper = styled.div`
-  background-color: #dcdcdc;
+  background-color: #f8f8f8;
   position: relative;
+  left: 0;
   height: 100%;
 `;
 
