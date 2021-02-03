@@ -24,6 +24,7 @@ const StyledHeading = styled.h1`
   @media (max-width: 800px) {
     position: fixed;
     left: 0;
+  }
 `;
 
 const Heading = styled(Card)`
@@ -36,6 +37,7 @@ const Heading = styled(Card)`
     top: 140px;
     left: 0;
     width: 100%;
+  }
 `;
 
 const MidWrapper = styled.div`

@@ -38,6 +38,14 @@ const StyledWrapper = styled.div`
   grid-gap: 20px;
   width: 40%;
   height: 100%;
+
+  @media (max-width: 1250px) {
+    width: 50%;
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 const StyledHeading = styled.h1`
@@ -48,10 +56,24 @@ const StyledHeading = styled.h1`
   position: absolute;
   width: 40%;
   height: 120px;
+
+  @media (max-width: 1250px) {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 240px;
+  }
+
+  @media (max-width: 800px) {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 240px;
+  }
 `;
 
 const StyledAppName = styled.h1`
-  padding: 8px;
+  padding: 16px;
 `;
 
 const StyledLeftSide = styled.div`
@@ -60,6 +82,14 @@ const StyledLeftSide = styled.div`
   right: 0;
   width: 60%;
   height: 100%;
+
+  @media (max-width: 1250px) {
+    width: 50%;
+  }
+
+  @media (max-width: 800px) {
+    width: 0%;
+  }
 `;
 
 function Login() {
