@@ -31,12 +31,9 @@ const Heading = styled(Card)`
   width: 1fr;
   height: 64px;
 
-  @media (max-width: 800px) {
-    display: grid;
-    position: fixed;
-    top: 140px;
-    left: 0;
-    width: 100%;
+  @media (max-width: 1250px) {
+    width: 0%;
+    height: 0%;
   }
 `;
 
@@ -45,12 +42,16 @@ const MidWrapper = styled.div`
   grid-template-columns: 1.25fr 0.75fr;
   height: 260px;
 
+  @media (max-width: 1250px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
   @media (max-width: 800px) {
     grid-template-columns: 1fr;
-    height: 420px;
+    height: 320px;
     position: fixed;
-    top: 240px;
     left: 0;
+    top: 160px;
     width: 100%;
   }
 `;
@@ -60,12 +61,17 @@ const BottomWrapper = styled.div`
   grid-template-columns: 1.25fr 0.5fr 0.5fr;
   height: 210px;
 
+  @media (max-width: 1250px) {
+    grid-template-columns: 0.75fr 0.75fr 0.75fr;
+  }
+
   @media (max-width: 800px) {
-    grid-template-colums: 1fr;
-    height: 380px;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    height: 220px;
     position: fixed;
-    top: 740px;
     left: 0;
+    bottom: 0;
     width: 100%;
   }
 `;
