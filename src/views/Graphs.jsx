@@ -12,6 +12,12 @@ const View = styled.div`
   bottom: 0;
   right: 0;
   left: 64px;
+
+  @media (max-width: 800px) {
+    position: fixed;
+    letf: 0;
+    width: 95%;
+  }
 `;
 
 const StyledHeader = styled(Header)`
@@ -24,6 +30,12 @@ const StyledHeading = styled.h1`
   font-size: 48px;
   font-weight: bold;
   padding: 15px;
+
+  @media (max-width: 800px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 `;
 
 const StyledDropdown = styled(Dropdown)`
@@ -37,8 +49,12 @@ const StyledDropdown = styled(Dropdown)`
 function Graphs() {
   const [selectedValue, setSelectedValue] = useState(null);
   const items = [
-    { id: "btc", name: "BitCoin" },
+    { id: "btc", name: "Bitcoin" },
     { id: "eth", name: "Ether" },
+    { id: "xrp", name: "Ripple" },
+    { id: "xlm", name: "Stellar" },
+    { id: "ltc", name: "Litecoin" },
+    { id: "doge", name: "Dogecoin" },
   ];
   function onValueChange(value) {
     setSelectedValue(value);

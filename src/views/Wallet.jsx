@@ -16,6 +16,7 @@ const View = styled.div`
   @media (max-width: 800px) {
     position: fixed;
     letf: 0;
+    width: 95%;
   }
 `;
 
@@ -33,6 +34,7 @@ const StyledHeading = styled.h1`
 
   @media (max-width: 800px) {
     position: fixed;
+    top: 0;
     left: 0;
   }
 `;
@@ -40,12 +42,20 @@ const StyledHeading = styled.h1`
 const BigCardWrapper = styled.div`
   display: grid;
   grid-template-columns: 1.25fr 0.5fr;
-  height: 310px;
+  height: 320px;
 
   @media (max-width: 1250px) {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    height: 420px;
+    grid-template-rows: 1fr;
+    height: 320px;
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    position: fixed;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 240px;
   }
 `;
 
@@ -55,9 +65,16 @@ const SmallCardWrapper = styled.div`
   height: 240px;
 
   @media (max-width: 1250px) {
-    display: grid;
     grid-template-rows: 1fr 1fr;
-    height: 200px;
+    height: 300px;
+  }
+
+  @media (max-width: 800px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: fixed;
+    left: 0;
+    width: 100%;
   }
 `;
 
