@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Header from "components/Header";
+import Sidebar from "components/Sidebar";
 import Dropdown from "components/Dropdown";
 
 const View = styled.div`
@@ -12,6 +14,12 @@ const View = styled.div`
   left: 64px;
 `;
 
+const StyledHeader = styled(Header)`
+  position: fixed;
+  top: 0;
+  width: 100%;
+`;
+
 const StyledHeading = styled.h1`
   font-size: 48px;
   font-weight: bold;
@@ -22,7 +30,7 @@ const StyledDropdown = styled(Dropdown)`
   margin: 12px;
   position: fixed;
   top: 160px;
-  left: 80px;
+  left: 8px;
   width: 320px;
 `;
 
@@ -37,12 +45,14 @@ function Graphs() {
   }
   return (
     <View>
+      <StyledHeader />
       <StyledHeading>Graphs</StyledHeading>
       <StyledDropdown
         items={items}
         value={selectedValue}
         onChange={onValueChange}
       />
+      <Sidebar />
     </View>
   );
 }

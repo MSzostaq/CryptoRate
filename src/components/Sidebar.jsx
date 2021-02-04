@@ -27,15 +27,18 @@ const StyledWrapper = styled.nav`
   flex-direction: column;
   justify-content: center;
   position: fixed;
+  left: 0;
+  top: 0;
   width: 64px;
   height: 100%;
 
   @media (max-width: 800px) {
     flex-direction: row;
-    grid-gap: 48px;
-    position: fixed;
+    grid-gap: 64px;
+    position: relative;
+    right: 0;
     bottom: 0;
-    width: 100%;
+    width: 110%;
     height: 64px;
   }
 `;

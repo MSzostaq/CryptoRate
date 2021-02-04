@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Header from "components/Header";
+import Sidebar from "components/Sidebar";
 import Card from "components/Card";
 
 const View = styled.div`
@@ -15,6 +17,12 @@ const View = styled.div`
     position: fixed;
     letf: 0;
   }
+`;
+
+const StyledHeader = styled(Header)`
+  position: fixed;
+  top: 0;
+  width: 100%;
 `;
 
 const StyledHeading = styled.h1`
@@ -56,6 +64,7 @@ const SmallCardWrapper = styled.div`
 function Wallet() {
   return (
     <View>
+      <StyledHeader />
       <StyledHeading>My Wallet</StyledHeading>
       <BigCardWrapper>
         <Card />
@@ -67,6 +76,7 @@ function Wallet() {
         <Card />
         <Card />
       </SmallCardWrapper>
+      <Sidebar />
     </View>
   );
 }
