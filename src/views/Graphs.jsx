@@ -15,7 +15,7 @@ const View = styled.div`
 
   @media (max-width: 800px) {
     position: fixed;
-    letf: 0;
+    left: 0;
     width: 95%;
   }
 `;

@@ -15,7 +15,7 @@ const View = styled.div`
 
   @media (max-width: 800px) {
     position: fixed;
-    letf: 0;
+    left: 0;
     width: 95%;
   }
 `;
@@ -66,14 +66,15 @@ const SmallCardWrapper = styled.div`
 
   @media (max-width: 1250px) {
     grid-template-rows: 1fr 1fr;
-    height: 300px;
+    height: 320px;
   }
 
   @media (max-width: 800px) {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     position: fixed;
     left: 0;
+    bottom: 68px;
     width: 100%;
   }
 `;
