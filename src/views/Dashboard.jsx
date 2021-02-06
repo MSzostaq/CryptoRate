@@ -28,7 +28,6 @@ const StyledHeader = styled(Header)`
 const StyledHeading = styled.h1`
   font-size: 48px;
   font-weight: bold;
-  height: 100px;
   padding: 16px;
 
   @media (max-width: 800px) {

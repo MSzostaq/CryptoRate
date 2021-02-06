@@ -29,7 +29,6 @@ const StyledHeader = styled(Header)`
 const StyledHeading = styled.h1`
   font-size: 48px;
   font-weight: bold;
-  height: 100px;
   padding: 16px;
 
   @media (max-width: 800px) {
@@ -46,7 +45,6 @@ const BigCardWrapper = styled.div`
 
   @media (max-width: 1250px) {
     grid-template-rows: 1fr;
-    height: 320px;
   }
 
   @media (max-width: 800px) {
@@ -62,11 +60,10 @@ const BigCardWrapper = styled.div`
 const SmallCardWrapper = styled.div`
   display: grid;
   grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
-  height: 240px;
+  height: 320px;
 
   @media (max-width: 1250px) {
     grid-template-rows: 1fr 1fr;
-    height: 320px;
   }
 
   @media (max-width: 800px) {

@@ -29,7 +29,7 @@ const StyledHeader = styled(Header)`
 const StyledHeading = styled.h1`
   font-size: 48px;
   font-weight: bold;
-  padding: 15px;
+  padding: 16px;
 
   @media (max-width: 800px) {
     position: fixed;
@@ -41,9 +41,11 @@ const StyledHeading = styled.h1`
 const StyledDropdown = styled(Dropdown)`
   margin: 12px;
   position: fixed;
-  top: 160px;
-  left: 8px;
   width: 320px;
+
+  @media (max-width: 1250px) {
+    top: 100px;
+  }
 `;
 
 function Graphs() {
@@ -54,7 +56,6 @@ function Graphs() {
     { id: "xrp", name: "Ripple" },
     { id: "xlm", name: "Stellar" },
     { id: "ltc", name: "Litecoin" },
-    { id: "doge", name: "Dogecoin" },
   ];
   function onValueChange(value) {
     setSelectedValue(value);

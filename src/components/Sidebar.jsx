@@ -25,6 +25,7 @@ const StyledWrapper = styled.nav`
   background-color: #0f5298;
   display: flex;
   flex-direction: column;
+  grid-gap: 32px;
   justify-content: center;
   position: fixed;
   left: 0;
@@ -35,8 +36,8 @@ const StyledWrapper = styled.nav`
   @media (max-width: 800px) {
     flex-direction: row;
     grid-gap: 64px;
-    position: relative;
-    right: 0;
+    left: 0;
+    top: 653px;
     bottom: 0;
     width: 110%;
     height: 64px;
