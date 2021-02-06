@@ -5,7 +5,8 @@ import Icon from "components/Icon";
 
 const Heading = styled.div`
   background-color: #f8f8f8;
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 64px;
 `;
@@ -16,11 +17,6 @@ const StyledAlertIcon = styled(Icon)`
   right: 72px;
   width: 32px;
   height: 32px;
-
-  &:active {
-    color: #000;
-    font-weight: bold;
-  }
 `;
 
 const StyledProfileIcon = styled(Icon)`
@@ -29,11 +25,6 @@ const StyledProfileIcon = styled(Icon)`
   right: 8px;
   width: 48px;
   height: 48px;
-
-  &:active {
-    color: #000;
-    font-weight: bold;
-  }
 `;
 
 const StyledLink = styled(Link)`

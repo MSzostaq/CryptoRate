@@ -60,7 +60,7 @@ const BigCardWrapper = styled.div`
 const SmallCardWrapper = styled.div`
   display: grid;
   grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
-  height: 320px;
+  height: 260px;
 
   @media (max-width: 1250px) {
     grid-template-rows: 1fr 1fr;
@@ -82,14 +82,14 @@ function Wallet() {
       <StyledHeader />
       <StyledHeading>My Wallet</StyledHeading>
       <BigCardWrapper>
-        <Card />
-        <Card />
+        <Card whileHover={{ scale: 1.01 }} />
+        <Card whileHover={{ scale: 1.01 }} />
       </BigCardWrapper>
       <SmallCardWrapper>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card whileHover={{ scale: 1.01 }} />
+        <Card whileHover={{ scale: 1.01 }} />
+        <Card whileHover={{ scale: 1.01 }} />
+        <Card whileHover={{ scale: 1.01 }} />
       </SmallCardWrapper>
       <Sidebar />
     </View>
