@@ -91,15 +91,15 @@ function Dashboard() {
     <View>
       <StyledHeader />
       <StyledHeading>Dashboard</StyledHeading>
-      <Heading whileHover={{ scale: 1.01 }} />
+      <Heading whileHover={{ scale: 1.02 }} />
       <MidWrapper>
-        <Card whileHover={{ scale: 1.01 }} />
-        <Card whileHover={{ scale: 1.01 }} />
+        <Card whileHover={{ scale: 1.02 }} />
+        <Card whileHover={{ scale: 1.02 }} />
       </MidWrapper>
       <BottomWrapper>
-        <Card whileHover={{ scale: 1.01 }} />
-        <Card whileHover={{ scale: 1.01 }} />
-        <Card whileHover={{ scale: 1.01 }} />
+        <Card whileHover={{ scale: 1.02 }} />
+        <Card whileHover={{ scale: 1.02 }} />
+        <Card whileHover={{ scale: 1.02 }} />
       </BottomWrapper>
       <Sidebar />
     </View>

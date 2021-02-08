@@ -53,7 +53,7 @@ const BigCardWrapper = styled.div`
     top: 120px;
     left: 0;
     width: 100%;
-    height: 240px;
+    height: 300px;
   }
 `;
 
@@ -82,14 +82,14 @@ function Wallet() {
       <StyledHeader />
       <StyledHeading>My Wallet</StyledHeading>
       <BigCardWrapper>
-        <Card whileHover={{ scale: 1.01 }} />
-        <Card whileHover={{ scale: 1.01 }} />
+        <Card whileHover={{ scale: 1.02 }} />
+        <Card whileHover={{ scale: 1.02 }} />
       </BigCardWrapper>
       <SmallCardWrapper>
-        <Card whileHover={{ scale: 1.01 }} />
-        <Card whileHover={{ scale: 1.01 }} />
-        <Card whileHover={{ scale: 1.01 }} />
-        <Card whileHover={{ scale: 1.01 }} />
+        <Card whileHover={{ scale: 1.02 }} />
+        <Card whileHover={{ scale: 1.02 }} />
+        <Card whileHover={{ scale: 1.02 }} />
+        <Card whileHover={{ scale: 1.02 }} />
       </SmallCardWrapper>
       <Sidebar />
     </View>
