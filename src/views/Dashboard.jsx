@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import Header from "components/Header";
 import Sidebar from "components/Sidebar";
 import Card from "components/Card";
 
-const View = styled.div`
+const View = styled(motion.div)`
   background-color: #f8f8f8;
   display: grid;
   position: fixed;
@@ -91,7 +92,7 @@ function Dashboard() {
     <View>
       <StyledHeader />
       <StyledHeading>Dashboard</StyledHeading>
-      <Heading whileHover={{ scale: 1.02 }} />
+      <Heading whileHover={{ scale: 1.01 }} />
       <MidWrapper>
         <Card whileHover={{ scale: 1.02 }} />
         <Card whileHover={{ scale: 1.02 }} />
