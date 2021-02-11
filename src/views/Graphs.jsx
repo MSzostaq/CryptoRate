@@ -45,6 +45,10 @@ const StyledDropdown = styled(Dropdown)`
   top: 160px;
 
   @media (max-width: 1250px) {
+    top: 160px;
+  }
+
+  @media (max-width: 800px) {
     top: 100px;
   }
 `;

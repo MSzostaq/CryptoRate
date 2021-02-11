@@ -36,10 +36,8 @@ const StyledWrapper = styled.nav`
   @media (max-width: 800px) {
     flex-direction: row;
     grid-gap: 64px;
-    left: 0;
-    top: 653px;
     bottom: 0;
-    width: 110%;
+    width: 100%;
     height: 64px;
   }
 `;

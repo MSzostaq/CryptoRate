@@ -30,6 +30,7 @@ const StyledHeading = styled.h1`
   font-size: 48px;
   font-weight: bold;
   padding: 16px;
+  top: 0;
 
   @media (max-width: 800px) {
     position: fixed;
@@ -82,7 +83,7 @@ const BottomWrapper = styled.div`
     height: 220px;
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 20px;
     width: 100%;
   }
 `;
