@@ -73,7 +73,7 @@ const SmallCardWrapper = styled.div`
     grid-template-columns: 1fr 1fr;
     position: fixed;
     left: 0;
-    bottom: 68px;
+    bottom: 80px;
     width: 100%;
     height: 240px;
   }
