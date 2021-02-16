@@ -16,7 +16,7 @@ const StyledLink = styled(Link)`
   color: #d3d3d3;
   display: flex;
   flex-direction: row;
-  margin-bottom: 24px;
+  margin-top: 80px;
   text-decoration: none;
   height: 64px;
 `;
@@ -24,22 +24,22 @@ const StyledLink = styled(Link)`
 const StyledWrapper = styled.nav`
   background-color: #0f5298;
   display: flex;
-  flex-direction: column;
-  grid-gap: 32px;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 64px;
-  height: 100%;
+  top: auto;
+  bottom: 0;
+  width: 100%;
+  height: 64px;
 
-  @media (max-width: 800px) {
-    flex-direction: row;
-    grid-gap: 64px;
-    top: auto;
-    bottom: 0;
-    width: 100%;
-    height: 64px;
+  @media (min-width: 800px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 32px;
+    left: 0;
+    top: 0;
+    width: 64px;
+    height: 100%;
   }
 `;
 
