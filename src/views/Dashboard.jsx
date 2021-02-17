@@ -11,13 +11,11 @@ const View = styled(motion.div)`
   position: fixed;
   bottom: 0;
   right: 0;
-  left: 64px;
+  left: 0;
   width: 95%;
 
-  @media (max-width: 800px) {
-    position: fixed;
-    left: 0;
-    width: 95%;
+  @media (min-width: 800px) {
+    left: 64px;
 `;
 
 const StyledHeader = styled(Header)`
@@ -27,15 +25,18 @@ const StyledHeader = styled(Header)`
 `;
 
 const StyledHeading = styled.h1`
+  position: fixed;
+  top: 0;
+  left: 0;
   font-size: 48px;
   font-weight: bold;
   padding: 16px;
   top: 0;
 
-  @media (max-width: 800px) {
+  @media (min-width: 800px) {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 64px;
+    left: auto;
   }
 `;
 

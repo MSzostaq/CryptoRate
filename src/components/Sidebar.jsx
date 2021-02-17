@@ -16,7 +16,6 @@ const StyledLink = styled(Link)`
   color: #d3d3d3;
   display: flex;
   flex-direction: row;
-  margin-top: 80px;
   text-decoration: none;
   height: 64px;
 `;
@@ -25,7 +24,7 @@ const StyledWrapper = styled.nav`
   background-color: #0f5298;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   position: fixed;
   top: auto;
   bottom: 0;
@@ -34,8 +33,8 @@ const StyledWrapper = styled.nav`
 
   @media (min-width: 800px) {
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 32px;
+    justify-content: center;
+    gap: 64px;
     left: 0;
     top: 0;
     width: 64px;
