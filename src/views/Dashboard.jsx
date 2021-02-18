@@ -25,16 +25,14 @@ const StyledHeader = styled(Header)`
 `;
 
 const StyledHeading = styled.h1`
-  position: fixed;
-  top: 0;
-  left: 0;
   font-size: 48px;
   font-weight: bold;
   padding: 16px;
+  position: fixed;
   top: 0;
+  left: 0;
 
   @media (min-width: 800px) {
-    position: fixed;
     top: 64px;
     left: auto;
   }
