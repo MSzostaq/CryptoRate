@@ -39,12 +39,12 @@ const StyledHeading = styled.h1`
 `;
 
 const Heading = styled(Card)`
-  width: 1fr;
-  height: 64px;
+  width: auto;
+  height: 0%;
 
-  @media (max-width: 1250px) {
-    width: 0%;
-    height: 0%;
+  @media (min-width: 800px) {
+    width: 1fr;
+    height: 64px;
   }
 `;
 
