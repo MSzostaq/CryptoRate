@@ -9,12 +9,14 @@ const View = styled(motion.div)`
   background-color: #f8f8f8;
   display: grid;
   position: fixed;
+  top: auto;
   bottom: 0;
   right: 0;
   left: 0;
   width: 95%;
 
   @media (min-width: 800px) {
+    top: 64px;
     left: 64px;
 `;
 
@@ -33,57 +35,72 @@ const StyledHeading = styled.h1`
   left: 0;
 
   @media (min-width: 800px) {
-    top: 64px;
+    top: 48px;
     left: auto;
   }
 `;
 
 const Heading = styled(Card)`
-  width: auto;
+  width: 0%;
   height: 0%;
 
   @media (min-width: 800px) {
-    width: 1fr;
+    position: fixed;
+    top: 128px;
+    width: 95%;
     height: 64px;
   }
 `;
 
 const MidWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
-  height: 260px;
+  grid-template-columns: 1fr;
+  position: fixed;
+  left: 0;
+  top: 160px;
+  width: 100%;
+  height: 320px;
 
-  @media (max-width: 1250px) {
+  @media (min-width: 800px) {
     grid-template-columns: 1fr 1fr;
+    left: 64px;
+    top: 220px;
+    width: 95%;
+    height: 260px;
   }
 
-  @media (max-width: 800px) {
-    grid-template-columns: 1fr;
-    height: 320px;
-    position: fixed;
-    left: 0;
-    top: 160px;
-    width: 100%;
+  @media (min-width: 1250px) {
+    grid-template-columns: 1fr 1fr;
+    left: 64px;
+    top: 220px;
+    width: 95%;
+    height: 280px;
   }
 `;
 
 const BottomWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1.25fr 0.5fr 0.5fr;
-  height: 210px;
+  grid-template-rows: 1fr;
+  height: 220px;
+  position: fixed;
+  top: 480px;
+  left: 0;
+  width: 100%;
 
-  @media (max-width: 1250px) {
-    grid-template-columns: 0.75fr 0.75fr 0.75fr;
+  @media (min-width: 800px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    left: 64px;
+    top: 480px;
+    width: 95%;
+    height: 220px;
   }
 
-  @media (max-width: 800px) {
-    display: grid;
-    grid-template-rows: 1fr 0.5fr;
-    height: 220px;
-    position: fixed;
-    left: 0;
-    bottom: 20px;
-    width: 100%;
+  @media (min-width: 1250px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    left: 64px;
+    top: 500px;
+    width: 95%;
+    height: 200px;
   }
 `;
 
