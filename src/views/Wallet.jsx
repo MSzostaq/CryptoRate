@@ -74,19 +74,19 @@ const SmallCardWrapper = styled.div`
   height: 260px;
 
   @media (min-width: 800px) {
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     left: 64px;
     top: 420px;
     width: 92%;
-    height: 520px;
+    height: 300px;
   }
 
   @media (min-width: 1250px) {
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     left: 64px;
     top: 480px;
     width: 95%;
-    height: 500px;
+    height: 460px;
   }
 `;
 

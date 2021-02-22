@@ -47,8 +47,12 @@ const Heading = styled(Card)`
   @media (min-width: 800px) {
     position: fixed;
     top: 128px;
-    width: 95%;
+    width: 90%;
     height: 64px;
+  }
+
+  @media (min-width: 1250px) {
+    width: 94%;
   }
 `;
 
@@ -65,11 +69,12 @@ const MidWrapper = styled.div`
     grid-template-columns: 1fr 1fr;
     left: 64px;
     top: 220px;
-    width: 95%;
+    width: 92%;
     height: 260px;
   }
 
   @media (min-width: 1250px) {
+    width: 95%;
     height: 280px;
   }
 `;
@@ -87,12 +92,13 @@ const BottomWrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     left: 64px;
     top: 480px;
-    width: 95%;
+    width: 92%;
     height: 220px;
   }
 
   @media (min-width: 1250px) {
     top: 500px;
+    width: 95%;
     height: 200px;
   }
 `;
