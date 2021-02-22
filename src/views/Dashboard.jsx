@@ -70,10 +70,6 @@ const MidWrapper = styled.div`
   }
 
   @media (min-width: 1250px) {
-    grid-template-columns: 1fr 1fr;
-    left: 64px;
-    top: 220px;
-    width: 95%;
     height: 280px;
   }
 `;
@@ -96,10 +92,7 @@ const BottomWrapper = styled.div`
   }
 
   @media (min-width: 1250px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    left: 64px;
     top: 500px;
-    width: 95%;
     height: 200px;
   }
 `;

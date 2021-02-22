@@ -42,12 +42,26 @@ const StyledHeading = styled.h1`
 
 const BigCardWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   position: fixed;
   top: 120px;
   left: 0;
   width: 100%;
   height: 280px;
+
+  @media (min-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+    left: 64px;
+    top: 128px;
+    width: 92%;
+    height: 580px;
+  }
+
+  @media (min-width: 1250px) {
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    height: 720px;
+  }
 `;
 
 const SmallCardWrapper = styled.div`
@@ -58,6 +72,22 @@ const SmallCardWrapper = styled.div`
   left: 0;
   width: 100%;
   height: 260px;
+
+  @media (min-width: 800px) {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    left: 64px;
+    top: 420px;
+    width: 92%;
+    height: 520px;
+  }
+
+  @media (min-width: 1250px) {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    left: 64px;
+    top: 480px;
+    width: 95%;
+    height: 500px;
+  }
 `;
 
 function Wallet() {
