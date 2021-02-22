@@ -31,11 +31,10 @@ const StyledHeading = styled.h1`
   font-weight: bold;
   padding: 16px;
   position: fixed;
-  top: 0;
+  top: 48px;
   left: 0;
 
   @media (min-width: 800px) {
-    top: 48px;
     left: auto;
   }
 `;
