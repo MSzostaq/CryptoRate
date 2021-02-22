@@ -18,6 +18,7 @@ const View = styled(motion.div)`
   @media (min-width: 800px) {
     top: 64px;
     left: 64px;
+  }
 `;
 
 const StyledHeader = styled(Header)`

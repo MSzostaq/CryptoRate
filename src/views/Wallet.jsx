@@ -1,22 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import Header from "components/Header";
 import Sidebar from "components/Sidebar";
 import Card from "components/Card";
 
-const View = styled.div`
+const View = styled(motion.div)`
   background-color: #f8f8f8;
   display: grid;
   position: fixed;
-  top: 64px;
+  top: auto;
   bottom: 0;
   right: 0;
-  left: 64px;
+  left: 0;
+  width: 95%;
 
-  @media (max-width: 800px) {
-    position: fixed;
-    left: 0;
-    width: 95%;
+  @media (min-width: 800px) {
+    top: 64px;
+    left: 64px;
   }
 `;
 
@@ -30,53 +31,33 @@ const StyledHeading = styled.h1`
   font-size: 48px;
   font-weight: bold;
   padding: 16px;
+  position: fixed;
+  top: 48px;
+  left: 0;
 
-  @media (max-width: 800px) {
-    position: fixed;
-    top: 0;
-    left: 0;
+  @media (min-width: 800px) {
+    left: auto;
   }
 `;
 
 const BigCardWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1.25fr 0.5fr;
-  height: 320px;
-
-  @media (max-width: 1250px) {
-    grid-template-rows: 1fr;
-    height: 420px;
-  }
-
-  @media (max-width: 800px) {
-    grid-template-columns: 1fr;
-    position: fixed;
-    top: 120px;
-    left: 0;
-    width: 100%;
-    height: 300px;
-  }
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: 280px;
 `;
 
 const SmallCardWrapper = styled.div`
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  top: 400px;
+  left: 0;
+  width: 100%;
   height: 260px;
-
-  @media (max-width: 1250px) {
-    grid-template-rows: 1fr 1fr;
-    height: 300px;
-  }
-
-  @media (max-width: 800px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: fixed;
-    left: 0;
-    bottom: 80px;
-    width: 100%;
-    height: 240px;
-  }
 `;
 
 function Wallet() {
