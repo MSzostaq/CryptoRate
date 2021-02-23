@@ -1,22 +1,23 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import Header from "components/Header";
 import Sidebar from "components/Sidebar";
 import Dropdown from "components/Dropdown";
 
-const View = styled.div`
+const View = styled(motion.div)`
   background-color: #f8f8f8;
   display: grid;
   position: fixed;
-  top: 64px;
+  top: auto;
   bottom: 0;
   right: 0;
-  left: 64px;
+  left: 0;
+  width: 95%;
 
-  @media (max-width: 800px) {
-    position: fixed;
-    left: 0;
-    width: 95%;
+  @media (min-width: 800px) {
+    top: 64px;
+    left: 64px;
   }
 `;
 
@@ -30,27 +31,20 @@ const StyledHeading = styled.h1`
   font-size: 48px;
   font-weight: bold;
   padding: 16px;
+  position: fixed;
+  top: 48px;
+  left: 0;
 
-  @media (max-width: 800px) {
-    position: fixed;
-    top: 0;
-    left: 0;
+  @media (min-width: 800px) {
+    left: auto;
   }
 `;
 
 const StyledDropdown = styled(Dropdown)`
   margin: 12px;
   position: fixed;
-  width: 320px;
-  top: 160px;
-
-  @media (max-width: 1250px) {
-    top: 160px;
-  }
-
-  @media (max-width: 800px) {
-    top: 100px;
-  }
+  top: 140px;
+  width: 300px;
 `;
 
 function Graphs() {
