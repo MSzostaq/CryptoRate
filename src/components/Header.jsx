@@ -19,7 +19,7 @@ const StyledAlertIcon = styled(Icon)`
   height: 32px;
 `;
 
-const StyledProfileIcon = styled(Icon)`
+const StyledSettingsIcon = styled(Icon)`
   position: fixed;
   top: 8px;
   right: 8px;
@@ -36,7 +36,7 @@ function Header() {
   return (
     <Heading>
       <StyledLink>
-        <StyledProfileIcon icon="user" />
+        <StyledSettingsIcon icon="settings" />
         <StyledAlertIcon icon="notification" />
       </StyledLink>
     </Heading>
