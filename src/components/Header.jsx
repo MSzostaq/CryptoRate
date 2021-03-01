@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Icon from "components/Icon";
+import Modal from "components/Modal";
+import Popup from "popups/Popup";
 
 const Heading = styled.div`
   background-color: #f8f8f8;
