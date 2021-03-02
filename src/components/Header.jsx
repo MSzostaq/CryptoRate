@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import styled from "styled-components";
+import Button from "components/Button";
 import Icon from "components/Icon";
 import Modal from "components/Modal";
 import Popup from "popups/Popup";
@@ -14,6 +14,7 @@ const Heading = styled.div`
 `;
 
 const StyledAlertIcon = styled(Icon)`
+  color: #696969;
   position: fixed;
   top: 18px;
   right: 72px;
@@ -22,6 +23,7 @@ const StyledAlertIcon = styled(Icon)`
 `;
 
 const StyledSettingsIcon = styled(Icon)`
+  color: #696969;
   position: fixed;
   top: 8px;
   right: 8px;
@@ -29,18 +31,23 @@ const StyledSettingsIcon = styled(Icon)`
   height: 48px;
 `;
 
-const StyledLink = styled(Link)`
-  color: #696969;
-  text-decoration: none;
-`;
-
 function Header() {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal((prev) => !prev);
+  };
+
   return (
     <Heading>
-      <StyledLink>
-        <StyledSettingsIcon icon="settings" />
-        <StyledAlertIcon icon="notification" />
-      </StyledLink>
+      <Button onClick={openModal}>click me</Button>
+      {showModal && (
+        <Modal>
+          <Popup onClose={() => setShowModal(false)} />
+        </Modal>
+      )}
+      <StyledSettingsIcon icon="settings" />
+      <StyledAlertIcon icon="notification" />
     </Heading>
   );
 }
