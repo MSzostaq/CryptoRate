@@ -15,9 +15,6 @@ const Heading = styled.div`
 
 const StyledAlertIcon = styled(Icon)`
   color: #696969;
-  position: fixed;
-  top: 24px;
-  right: 80px;
   width: 32px;
   height: 32px;
 `;
@@ -26,7 +23,7 @@ const StyledAlertButton = styled(Button)`
   background-color: transparent;
   position: fixed;
   top: 0;
-  right: 80px;
+  right: 64px;
   width: 64px;
   height: 64px;
 `;
@@ -55,7 +52,7 @@ function Header() {
 
   return (
     <Heading>
-      <StyledSettingsButton onClick={openModal}>
+      <StyledSettingsButton onClick={openModal} whileTap={{ scale: 0.95 }}>
         <StyledSettingsIcon icon="settings" />
       </StyledSettingsButton>
       {showModal && (
@@ -63,7 +60,7 @@ function Header() {
           <Popup onClose={() => setShowModal(false)} />
         </Modal>
       )}
-      <StyledAlertButton>
+      <StyledAlertButton whileTap={{ scale: 0.95 }}>
         <StyledAlertIcon icon="notification" />
       </StyledAlertButton>
     </Heading>
