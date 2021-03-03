@@ -7,6 +7,8 @@ const CloseButton = styled(Icon)`
   color: #bdbdbd;
   cursor: pointer;
   position: fixed;
+  top: 8px;
+  right: 8px;
   width: 48px;
   height: 48px;
 `;
@@ -14,15 +16,15 @@ const CloseButton = styled(Icon)`
 const Content = styled(motion.div)`
   background-color: #f8f8f8;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   color: #000;
   position: retative;
-  width: 800px;
-  height: 420px;
+  width: 900px;
+  height: 520px;
 `;
 
 const Overlay = styled.div`
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +44,7 @@ function Popup({ onClose }) {
 
   return (
     <Overlay onClick={closeModal} ref={modalRef}>
-      <Content>
+      <Content animate={{ scale: 1.05 }} transition={{ type: "spring" }}>
         <CloseButton icon="close" onClick={onClose} />
       </Content>
     </Overlay>
