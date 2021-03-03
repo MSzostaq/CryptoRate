@@ -44,7 +44,7 @@ function Popup({ onClose }) {
 
   return (
     <Overlay onClick={closeModal} ref={modalRef}>
-      <Content animate={{ scale: 1.05 }} transition={{ type: "spring" }}>
+      <Content animate={{ scale: 1.1 }} transition={{ type: "spring" }}>
         <CloseButton icon="close" onClick={onClose} />
       </Content>
     </Overlay>

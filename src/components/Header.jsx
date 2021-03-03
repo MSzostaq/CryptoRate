@@ -22,11 +22,17 @@ const StyledAlertIcon = styled(Icon)`
   height: 32px;
 `;
 
+const StyledButton = styled(Button)`
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 64px;
+  height: 64px;
+`;
+
 const StyledSettingsIcon = styled(Icon)`
   color: #696969;
-  position: fixed;
-  top: 8px;
-  right: 8px;
   width: 48px;
   height: 48px;
 `;
@@ -40,13 +46,14 @@ function Header() {
 
   return (
     <Heading>
-      <Button onClick={openModal}>click me</Button>
+      <StyledButton onClick={openModal}>
+        <StyledSettingsIcon icon="settings" />
+      </StyledButton>
       {showModal && (
         <Modal>
           <Popup onClose={() => setShowModal(false)} />
         </Modal>
       )}
-      <StyledSettingsIcon icon="settings" />
       <StyledAlertIcon icon="notification" />
     </Heading>
   );
