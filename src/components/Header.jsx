@@ -16,13 +16,22 @@ const Heading = styled.div`
 const StyledAlertIcon = styled(Icon)`
   color: #696969;
   position: fixed;
-  top: 18px;
-  right: 72px;
+  top: 24px;
+  right: 80px;
   width: 32px;
   height: 32px;
 `;
 
-const StyledButton = styled(Button)`
+const StyledAlertButton = styled(Button)`
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 80px;
+  width: 64px;
+  height: 64px;
+`;
+
+const StyledSettingsButton = styled(Button)`
   background-color: transparent;
   position: fixed;
   top: 0;
@@ -46,15 +55,17 @@ function Header() {
 
   return (
     <Heading>
-      <StyledButton onClick={openModal}>
+      <StyledSettingsButton onClick={openModal}>
         <StyledSettingsIcon icon="settings" />
-      </StyledButton>
+      </StyledSettingsButton>
       {showModal && (
         <Modal>
           <Popup onClose={() => setShowModal(false)} />
         </Modal>
       )}
-      <StyledAlertIcon icon="notification" />
+      <StyledAlertButton>
+        <StyledAlertIcon icon="notification" />
+      </StyledAlertButton>
     </Heading>
   );
 }

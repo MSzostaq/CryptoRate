@@ -19,8 +19,15 @@ const Content = styled(motion.div)`
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   color: #000;
   position: retative;
-  width: 900px;
-  height: 520px;
+  width: 800px;
+  height: 420px;
+`;
+
+const ContentHeader = styled.div`
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 64px;
 `;
 
 const Overlay = styled.div`
@@ -45,7 +52,10 @@ function Popup({ onClose }) {
   return (
     <Overlay onClick={closeModal} ref={modalRef}>
       <Content animate={{ scale: 1.1 }} transition={{ type: "spring" }}>
-        <CloseButton icon="close" onClick={onClose} />
+        <ContentHeader>
+          <h1>Settings</h1>
+          <CloseButton icon="close" onClick={onClose} />
+        </ContentHeader>
       </Content>
     </Overlay>
   );
