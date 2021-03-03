@@ -9,8 +9,8 @@ const CloseButton = styled(Icon)`
   position: fixed;
   top: 8px;
   right: 8px;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
 `;
 
 const Content = styled(motion.div)`
@@ -24,6 +24,9 @@ const Content = styled(motion.div)`
 `;
 
 const ContentHeader = styled.div`
+  font-size: 32px;
+  font-weight: bold;
+  padding: 16px;
   position: fixed;
   top: 0;
   width: 100%;
