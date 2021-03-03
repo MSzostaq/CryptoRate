@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 import Header from "components/Header";
 import Sidebar from "components/Sidebar";
 import Card from "components/Card";
 
-const View = styled(motion.div)`
+const View = styled.div`
   background-color: #f8f8f8;
   display: grid;
   position: fixed;
