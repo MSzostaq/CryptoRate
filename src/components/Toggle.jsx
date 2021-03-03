@@ -23,6 +23,7 @@ function Toggle({ value, onChange }) {
   function onButtonClick() {
     onChange(!value);
   }
+
   return (
     <ToggleButton isOn={value} onClick={onButtonClick}>
       <Switch />

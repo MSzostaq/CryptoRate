@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import Icon from "components/Icon";
+import Toggle from "components/Toggle";
 
 const CloseButton = styled(Icon)`
   color: #bdbdbd;
@@ -33,6 +34,11 @@ const ContentHeader = styled.div`
   height: 64px;
 `;
 
+const MainContent = styled.div`
+  position: fixed;
+  top: 64px;
+`;
+
 const Overlay = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
@@ -52,6 +58,11 @@ function Popup({ onClose }) {
     }
   };
 
+  const [value, setValue] = useState(true);
+  function onValueChange(newValue) {
+    setValue(newValue);
+  }
+
   return (
     <Overlay onClick={closeModal} ref={modalRef}>
       <Content animate={{ scale: 1.1 }} transition={{ type: "spring" }}>
@@ -59,6 +70,9 @@ function Popup({ onClose }) {
           <h1>Settings</h1>
           <CloseButton icon="close" onClick={onClose} />
         </ContentHeader>
+        <MainContent>
+          <Toggle value={value} onChange={onValueChange} />
+        </MainContent>
       </Content>
     </Overlay>
   );
