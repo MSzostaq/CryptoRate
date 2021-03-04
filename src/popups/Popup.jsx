@@ -4,6 +4,15 @@ import { motion } from "framer-motion";
 import Icon from "components/Icon";
 import Toggle from "components/Toggle";
 
+const StyledHeading = styled.h1`
+  font-size: 38px;
+  font-weight: bold;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+`;
+
 const CloseButton = styled(Icon)`
   color: #bdbdbd;
   cursor: pointer;
@@ -74,7 +83,7 @@ function Popup({ onClose }) {
     <Overlay onClick={onClose} ref={modalRef}>
       <Content animate={{ scale: 1.1 }} transition={{ type: "spring" }}>
         <ContentHeader>
-          <h1>Settings</h1>
+          <StyledHeading>Settings</StyledHeading>
           <CloseButton icon="close" onClick={onClose} />
         </ContentHeader>
         <MainContent>
