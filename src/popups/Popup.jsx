@@ -17,8 +17,8 @@ const CloseButton = styled(Icon)`
   color: #bdbdbd;
   cursor: pointer;
   position: fixed;
-  top: 8px;
-  right: 8px;
+  top: 12px;
+  right: 12px;
   width: 40px;
   height: 40px;
 `;
@@ -75,12 +75,13 @@ function Popup({ onClose }) {
   };
 
   const [value, setValue] = useState(true);
+
   function onValueChange(newValue) {
     setValue(newValue);
   }
 
   return (
-    <Overlay onClick={onClose} ref={modalRef}>
+    <Overlay onClick={closeModal} ref={modalRef}>
       <Content animate={{ scale: 1.1 }} transition={{ type: "spring" }}>
         <ContentHeader>
           <StyledHeading>Settings</StyledHeading>
