@@ -1,24 +1,32 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import Button from "components/Button";
 import Icon from "components/Icon";
 import Toggle from "components/Toggle";
+
+const StyledCloseButton = styled(Button)`
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+`;
 
 const StyledHeading = styled.h1`
   font-size: 38px;
   font-weight: bold;
-  padding: 16px;
+  padding: 8px;
   position: fixed;
   top: 0;
   left: 0;
 `;
 
-const CloseButton = styled(Icon)`
+const CloseIcon = styled(Icon)`
   color: #bdbdbd;
-  cursor: pointer;
-  position: fixed;
-  top: 12px;
-  right: 12px;
   width: 40px;
   height: 40px;
 `;
@@ -41,11 +49,6 @@ const Content = styled(motion.div)`
 `;
 
 const ContentHeader = styled.div`
-  font-size: 32px;
-  font-weight: bold;
-  padding: 16px;
-  position: fixed;
-  top: 0;
   width: 100%;
   height: 64px;
 `;
@@ -85,7 +88,9 @@ function Popup({ onClose }) {
       <Content animate={{ scale: 1.1 }} transition={{ type: "spring" }}>
         <ContentHeader>
           <StyledHeading>Settings</StyledHeading>
-          <CloseButton icon="close" onClick={onClose} />
+          <StyledCloseButton whileTap={{ scale: 0.95 }}>
+            <CloseIcon icon="close" onClick={onClose} />
+          </StyledCloseButton>
         </ContentHeader>
         <MainContent>
           <Toggle value={value} onChange={onValueChange} />
