@@ -34,7 +34,6 @@ const CloseIcon = styled(Icon)`
 const Content = styled(motion.div)`
   background-color: #f8f8f8;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   color: #000;
   position: retative;
   width: 100vw;
